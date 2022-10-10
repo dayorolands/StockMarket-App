@@ -1,12 +1,15 @@
 package com.plcoding.stockmarketapp.data.repository
 
 import com.opencsv.bean.util.OpencsvUtils
+import com.plcoding.stockmarketapp.BuildConfig.API_KEY
 import com.plcoding.stockmarketapp.data.local.StockDatabase
 import com.plcoding.stockmarketapp.data.mapper.toCompanyList
 import com.plcoding.stockmarketapp.data.remote.StockApi
+import com.plcoding.stockmarketapp.data.remote.StockApi.Companion.API_KEY
 import com.plcoding.stockmarketapp.domain.model.CompanyListing
 import com.plcoding.stockmarketapp.domain.repository.StockRepository
 import com.plcoding.stockmarketapp.util.Resource
+import com.ramcosta.composedestinations.BuildConfig
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
 import retrofit2.HttpException
